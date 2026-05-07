@@ -4,7 +4,7 @@ import { BaseAPI } from "../BaseAPI";
 export class ProductAPI extends BaseAPI {
   constructor(request) {
     super(request);
-    this._endpoint = '/users';
+    this._endpoint = '/products';
     this._headers = { 'content-type': 'application/json' }
   }
 

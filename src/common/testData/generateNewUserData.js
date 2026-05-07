@@ -11,7 +11,7 @@ export function generateNewUserData(logger = null) {
   };
 
   if (logger) {
-    logger.debug(`Generated new user data: ${JSON.stringify(user)}`);
+    logger.debug(`Generated new product data: ${JSON.stringify(user)}`);
   }
 
   return user;

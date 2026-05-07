@@ -21,7 +21,7 @@ let productId;
 test.beforeEach(async ({ newProductData, productAPI }) => {
   const response = await productAPI.createNewProduct(newProductData);
 
-  await productAPI.assertCreatedResponseCode(response);
+  await productAPI.assertSuccessResponseCode(response);
 
   productId = await productAPI.parseIdFromBody(response);
 });
